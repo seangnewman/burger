@@ -5,7 +5,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var handleBards = require('handlebars');
-var mySQL = require('mysql');
+ 
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
