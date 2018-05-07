@@ -8,8 +8,17 @@ $(document).ready(function(){
   $(".createBurger").on("submit", function(event) {
     // Prevent default action
     event.preventDefault();
+    //Clear the error message
+    $('#errorMessage').text("");
+
+    var newBurgerName = $("#burger-name").val().trim();
+    if(newBurgerName === '' ){
+        $('#errorMessage').text("Please enter a name for the burger");
+        return;
+    }
+
     var newBurger = {
-      burger_name: $("#burger-name").val().trim(),
+      burger_name: newBurgerName,
       devoured: $("[name=devoured]:checked").val().trim()
     };
     

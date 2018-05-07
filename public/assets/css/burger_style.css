@@ -140,7 +140,7 @@ main{
 }
 .createBurger{
   position: relative; 
-  top:25%;
+  top:15%;
   background-color: black;
   opacity: .6;
   border-radius: 1.5rem;
@@ -158,4 +158,11 @@ main{
   margin-bottom: 1rem;
   border:none;
   border-radius: 2.5rem;
+}
+
+#errorMesssage{
+  color:greenyellow;
+  font-weight: bold;
+  font-style: italic;
+  font-size: .75rem;
 }
