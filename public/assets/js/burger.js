@@ -4,6 +4,7 @@
 // muscle memory
 
 $(document).ready(function(){
+    
   //From the main section,  the user is creating a new burger
   $(".createBurger").on("submit", function(event) {
     // Prevent default action
